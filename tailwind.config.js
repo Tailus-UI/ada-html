@@ -32,7 +32,7 @@ module.exports = {
             radius: "smoothest",
             background: "lighter",
             border: "light",
-            padding:"medium",
+            padding:"large",
             components: {
                 button: {
                     rounded : "2xl"
