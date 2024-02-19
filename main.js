@@ -1,5 +1,4 @@
 import "./assets/css/tailwind.css";
-import "./src/js/navbar.js"
 
 let switchers = document.querySelectorAll(".switcher");
 if (
