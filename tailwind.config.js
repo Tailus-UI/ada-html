@@ -3,7 +3,7 @@ import themer from "@tailus/themer";
 
 module.exports = {
     content: ["./*.html", "./*.js"],
-    darkMode: "class",
+    darkMode: "media",
     safelist: ["isToggled"],
     theme: {
         colors: ({ colors }) => ({

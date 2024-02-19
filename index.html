@@ -4,11 +4,24 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ada - A Tailus template</title>
+        <meta name="description" content="Modern landing page built with tailus themer" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://ada.tailus.io/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="WebSharper" />
+        <meta property="og:description" content="Modern landing page built with tailus themer" />
+        <meta property="og:image" content="" />
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="ada.tailus.io" />
+        <meta property="twitter:url" content="https://ada.tailus.io/" />
+        <meta name="twitter:title" content="Tailus Ada" />
+        <meta name="twitter:description" content="Modern landing page built with tailus themer" />
+        <meta name="twitter:image" content="" />
     </head>
+    
     <body class="bg-white dark:bg-gray-950">
     <header>
         <nav class="fixed overflow-hidden z-20 w-full bg-white/80 dark:bg-gray-950/75 dark:shadow-md rounded-b-lg dark:shadow-gray-950/10 border-b border-[--ui-light-border-color] border-x dark:border-[--ui-dark-border-color] backdrop-blur">
@@ -1122,35 +1135,34 @@ export default () =&gt; {
         </div>
     </footer>
                     
-        <script src="./shape.js"></script>
-        <script type="module" src="./main.js"></script>
-        <script type="module">
-            import Swiper from 'swiper/bundle';
-            import { Pagination } from 'swiper/modules';
-            import 'swiper/css/bundle';
-            import 'swiper/css/pagination';
-            import 'swiper/css/effect-cards'
+    <script type="module" src="./main.js"></script>
+    <script type="module">
+        import Swiper from 'swiper/bundle';
+        import { Pagination } from 'swiper/modules';
+        import 'swiper/css/bundle';
+        import 'swiper/css/pagination';
+        import 'swiper/css/effect-cards'
 
-            const swiper = new Swiper('.proofSlides', {
-                effect: "cube",
-                cubeEffect : {
-                    slideShadows: false,
-                    shadow: false,
-                    shadowOffset: 20,
-                    shadowScale: 0.94,
-                },
-                loop: true,
-                autoplay : {
-                    delay: 3000,
-                    duration : 500
-                },
-                grabCursor: true,
-                modules: [Pagination],
-                centeredSlides: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                }
-            });
-        </script>
+        const swiper = new Swiper('.proofSlides', {
+            effect: "cube",
+            cubeEffect : {
+                slideShadows: false,
+                shadow: false,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            loop: true,
+            autoplay : {
+                delay: 3000,
+                duration : 500
+            },
+            grabCursor: true,
+            modules: [Pagination],
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+            }
+        });
+    </script>
     </body>
 </html>
