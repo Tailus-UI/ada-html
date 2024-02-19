@@ -28,6 +28,7 @@
   "author": "Méschac irung",
   "license": "ISC",
   "dependencies": {
-    "@tailus/themer": "^0.0.4"
+    "@tailus/themer": "^0.0.4",
+    "swiper": "^11.0.6"
   }
 }

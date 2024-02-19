@@ -3,5 +3,71 @@
 @tailwind utilities;
 
 body {
-  font-family: "Urbanist";
+    font-family: "Work Sans", sans-serif;
+}
+
+.swiper-pagination-bullet{
+    @apply !bg-gray-200 dark:!bg-gray-700 !opacity-100;
+}
+
+.swiper-pagination-bullet-active{
+    @apply !bg-gray-950 dark:!bg-white;
+}
+
+@keyframes loop {
+    to {
+        offset-distance: 100%;
+    }
+}
+
+@layer utilities {
+    .animate-slide {
+        animation: slide 3s infinite;
+    }
+    .animate-slide-2 {
+        animation: slide2 3s infinite;
+    }
+}
+@layer components {
+    .navbar-active .hamburger div:first-child {
+        @apply translate-y-1.5 rotate-45;
+    }
+    .navbar-active .hamburger div:last-child {
+        @apply -translate-y-1 -rotate-45;
+    }
+    .navbar-active div:first-child div:first-child div:last-child {
+        @apply block lg:flex;
+    }
+}
+.isToggled #line1 {
+    @apply translate-y-1.5 rotate-45;
+}
+.isToggled #line2 {
+    @apply -translate-y-1 -rotate-45;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-20rem);
+    }
+    25% {
+        transform: translateX(-10rem);
+    }
+    100% {
+        transform: translateX(15rem);
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        transform: translateX(-20%);
+    }
+    75% {
+        transform: translateX(20vw);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(60vw);
+        opacity: 0;
+    }
 }
