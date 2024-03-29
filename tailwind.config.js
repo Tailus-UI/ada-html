@@ -7,19 +7,6 @@ module.exports = {
     darkMode: "media",
     safelist: ["isToggled"],
     theme: {
-        colors: ({ colors }) => ({
-            primary: colors.blue,
-            secondary: colors.lime,
-            accent: colors.pink,
-            success: colors.lime,
-            danger: colors.red,
-            warning: colors.yellow,
-            info: colors.blue,
-            gray: colors.zinc,
-            white: colors.white,
-            black: colors.black,
-            transparent: colors.transparent,
-      }),
       fontFamily: {
         sans: ['Geist', 'Inter', ...defaultTheme.fontFamily.sans],
         mono : ['GeistMono', 'fira-code', ...defaultTheme.fontFamily.mono],
@@ -35,8 +22,11 @@ module.exports = {
     },
     plugins: [
         themer({
+            palette: {
+                extend : "nature"
+            },
             radius: "smoothest",
-            background: "lighter",
+            background: "light",
             border: "light",
             padding:"large",
             components: {
