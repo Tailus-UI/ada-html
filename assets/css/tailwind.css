@@ -47,7 +47,7 @@
 }
 
 .swiper-pagination-bullet-active{
-    @apply !bg-gray-950 dark:!bg-white;
+    @apply !bg-gray-950 dark:!bg-gray-100;
 }
 
 @keyframes loop {

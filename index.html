@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ada - A Tailus template</title>
-        <meta name="description" content="Modern landing page built with tailus themer" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" media="(prefers-color-scheme: light)" />
-        <link rel="icon" type="image/svg+xml" href="/darkfavicon.svg" media="(prefers-color-scheme: dark)" />
 
-        <!-- Facebook Meta Tags -->
-        <meta property="og:url" content="https://ada.tailus.io/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="WebSharper" />
-        <meta property="og:description" content="Modern landing page built with tailus themer" />
-        <meta property="og:image" content="/og-cover.png" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ada - A Tailus template</title>
+    <meta name="description" content="Modern landing page built with tailus themer" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/svg+xml" href="/darkfavicon.svg" media="(prefers-color-scheme: dark)" />
 
-        <!-- Twitter Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="ada.tailus.io" />
-        <meta property="twitter:url" content="https://ada.tailus.io/" />
-        <meta name="twitter:title" content="Tailus Ada" />
-        <meta name="twitter:description" content="Modern landing page built with tailus themer" />
-        <meta name="twitter:image" content="/og-cover.png" />
-    </head>
-    
-    <body class="bg-white dark:bg-gray-900 dark:before:fixed dark:before:-z-50 dark:before:inset-0 dark:before:bg-gray-950/50">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://sugarai.dev/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WebSharper" />
+    <meta property="og:description" content="Modern landing page built with tailus themer" />
+    <meta property="og:image" content="/og-cover.png" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="ada.tailus.io" />
+    <meta property="twitter:url" content="https://ada.tailus.io/" />
+    <meta name="twitter:title" content="Tailus Ada" />
+    <meta name="twitter:description" content="Modern landing page built with tailus themer" />
+    <meta name="twitter:image" content="/og-cover.png" />
+</head>
+
+<body
+    class="bg-white dark:bg-gray-900 dark:before:fixed dark:before:-z-50 dark:before:inset-0 dark:before:bg-gray-950/50">
     <header>
-        <nav class="fixed overflow-hidden z-20 w-full bg-white/80 dark:bg-gray-950/0 dark:shadow-md rounded-b-lg dark:shadow-gray-950/10 border-b border-[--ui-light-border-color] border-x dark:border-[--ui-dark-border-color] backdrop-blur-2xl">
+        <nav
+            class="fixed overflow-hidden z-20 w-full bg-white/80 dark:bg-gray-950/0 dark:shadow-md rounded-b-lg dark:shadow-gray-950/10 border-b border-[--ui-light-border-color] border-x dark:border-[--ui-dark-border-color] backdrop-blur-2xl">
             <div class="px-6 m-auto max-w-6xl 2xl:px-0">
                 <div class="flex flex-wrap items-center justify-between py-2 sm:py-4">
                     <div class="w-full items-center flex justify-between lg:w-auto">
-                        <a href="/" aria-label="tailus logo">
-                            <svg class="text-gray-950 dark:text-white h-7" viewBox="0 0 298 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="/" aria-label="sugarai logo">
+                            <img class="fill-white text-gray-950 dark:text-white h-7"
+                                src="/images/logos/sugarai-logo-transparent-2.svg" alt="sugarai logo">
+                            <!-- <svg class="text-gray-950 dark:text-white h-7" viewBox="0 0 298 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M107 30.7857H113.6V16.3429H122.686V30.7857H131.386V38.5H122.686V53.5429C122.686 55.4286 123 56.8429 123.629 57.7857C124.286 58.7286 125.214 59.2 126.414 59.2C127.414 59.2 128.2 59.0143 128.771 58.6429C129.371 58.2714 129.729 58.0143 129.843 57.8714L133.229 64.5143C133.057 64.6857 132.557 64.9714 131.729 65.3714C130.9 65.7714 129.829 66.1429 128.514 66.4857C127.2 66.8286 125.7 67 124.014 67C121.043 67 118.557 66.1143 116.557 64.3429C114.586 62.5714 113.6 59.8 113.6 56.0286V38.5H107V30.7857ZM167.156 65.9714V59.4571C166.928 60.1429 166.27 61.0857 165.185 62.2857C164.128 63.4857 162.67 64.5714 160.813 65.5429C158.985 66.5143 156.813 67 154.299 67C151.013 67 148.056 66.2143 145.428 64.6429C142.799 63.0714 140.728 60.8857 139.213 58.0857C137.699 55.2857 136.942 52.0571 136.942 48.4C136.942 44.7429 137.699 41.5143 139.213 38.7143C140.728 35.9143 142.799 33.7286 145.428 32.1571C148.056 30.5571 151.013 29.7571 154.299 29.7571C156.756 29.7571 158.885 30.1857 160.685 31.0429C162.485 31.9 163.928 32.8857 165.013 34C166.128 35.1143 166.813 36.0857 167.07 36.9143V30.7857H176.156V65.9714H167.156ZM145.985 48.4C145.985 50.6571 146.485 52.6286 147.485 54.3143C148.485 56 149.785 57.3 151.385 58.2143C153.013 59.1286 154.756 59.5857 156.613 59.5857C158.613 59.5857 160.385 59.1143 161.928 58.1714C163.499 57.2286 164.728 55.9286 165.613 54.2714C166.528 52.5857 166.985 50.6286 166.985 48.4C166.985 46.1714 166.528 44.2286 165.613 42.5714C164.728 40.8857 163.499 39.5714 161.928 38.6286C160.385 37.6571 158.613 37.1714 156.613 37.1714C154.756 37.1714 153.013 37.6429 151.385 38.5857C149.785 39.5 148.485 40.8 147.485 42.4857C146.485 44.1714 145.985 46.1429 145.985 48.4ZM186.271 65.9714V30.7857H195.4V65.9714H186.271ZM190.943 20.2429C189.4 20.2429 188.071 19.6857 186.957 18.5714C185.871 17.4571 185.329 16.1286 185.329 14.5857C185.329 13.0429 185.871 11.7143 186.957 10.6C188.071 9.45714 189.4 8.88571 190.943 8.88571C191.971 8.88571 192.914 9.15714 193.771 9.7C194.657 10.2143 195.357 10.9 195.871 11.7571C196.414 12.5857 196.686 13.5286 196.686 14.5857C196.686 16.1286 196.129 17.4571 195.014 18.5714C193.9 19.6857 192.543 20.2429 190.943 20.2429ZM215.437 65.9714H206.222V7H215.437V65.9714ZM234.044 48.0571C234.044 51.4857 234.744 54.2143 236.144 56.2429C237.572 58.2714 239.815 59.2857 242.872 59.2857C245.958 59.2857 248.201 58.2714 249.601 56.2429C251.001 54.2143 251.701 51.4857 251.701 48.0571V30.7857H260.787V49.2143C260.787 52.7571 260.087 55.8714 258.687 58.5571C257.287 61.2143 255.258 63.2857 252.601 64.7714C249.944 66.2571 246.701 67 242.872 67C239.072 67 235.844 66.2571 233.187 64.7714C230.53 63.2857 228.501 61.2143 227.101 58.5571C225.701 55.8714 225.001 52.7571 225.001 49.2143V30.7857H234.044V48.0571ZM284.016 29.7571C285.988 29.7571 287.816 29.9429 289.502 30.3143C291.188 30.6857 292.631 31.1286 293.831 31.6429C295.031 32.1571 295.859 32.5857 296.316 32.9286L292.973 38.5857C292.402 38.1 291.373 37.5429 289.888 36.9143C288.431 36.2857 286.788 35.9714 284.959 35.9714C283.131 35.9714 281.588 36.3 280.331 36.9571C279.073 37.6143 278.445 38.6 278.445 39.9143C278.445 41.2 279.102 42.2286 280.416 43C281.759 43.7714 283.573 44.4143 285.859 44.9286C287.745 45.3571 289.545 45.9571 291.259 46.7286C292.973 47.4714 294.373 48.5429 295.459 49.9429C296.573 51.3143 297.131 53.1571 297.131 55.4714C297.131 57.6714 296.659 59.5143 295.716 61C294.802 62.4571 293.573 63.6286 292.031 64.5143C290.488 65.4 288.773 66.0286 286.888 66.4C285.031 66.8 283.159 67 281.273 67C278.959 67 276.888 66.7714 275.059 66.3143C273.259 65.8571 271.759 65.3286 270.559 64.7286C269.359 64.1 268.502 63.5714 267.988 63.1429L271.331 56.8C272.073 57.5143 273.288 58.2714 274.973 59.0714C276.659 59.8429 278.545 60.2286 280.631 60.2286C282.859 60.2286 284.645 59.8 285.988 58.9429C287.331 58.0857 288.002 56.9429 288.002 55.5143C288.002 54.4571 287.673 53.6 287.016 52.9429C286.388 52.2857 285.516 51.7571 284.402 51.3571C283.288 50.9571 282.045 50.6 280.673 50.2857C279.388 49.9714 278.088 49.5714 276.773 49.0857C275.488 48.5714 274.302 47.9143 273.216 47.1143C272.131 46.2857 271.259 45.2571 270.602 44.0286C269.945 42.8 269.616 41.3571 269.616 39.7C269.616 37.5857 270.288 35.7857 271.631 34.3C272.973 32.8143 274.745 31.6857 276.945 30.9143C279.145 30.1429 281.502 29.7571 284.016 29.7571Z" fill="currentColor"></path><path d="M53.6523 31.5142C53.6523 28.5967 51.2872 26.2316 48.3697 26.2316C45.4522 26.2316 43.0871 28.5967 43.0871 31.5142C43.0871 34.4317 45.4522 36.7968 48.3697 36.7968C51.2872 36.7968 53.6523 34.4317 53.6523 31.5142Z" fill="currentColor"></path><path d="M42.6502 36.769C42.5195 36.7593 42.3875 36.7543 42.2543 36.7543C39.3572 36.7543 37.0087 39.1029 37.0087 42C37.0087 44.8971 39.3572 47.2457 42.2543 47.2457C45.1514 47.2457 47.5 44.8971 47.5 42C47.5 40.92 47.1736 39.9162 46.6141 39.0819C45.0637 38.7237 43.691 37.9013 42.6502 36.769Z" fill="currentColor"></path><path d="M34.8047 39.7898C34.5971 40.4904 34.4857 41.2322 34.4857 42C34.4857 42.7679 34.5971 43.5097 34.8047 44.2102C33.969 46.0163 32.1408 47.2693 30.02 47.2693C27.1098 47.2693 24.7507 44.9102 24.7507 42C24.7507 39.0899 27.1098 36.7308 30.02 36.7308C32.1408 36.7308 33.969 37.9837 34.8047 39.7898Z" fill="currentColor"></path><path d="M48.3708 47.2122C51.2834 47.2122 53.6445 49.5733 53.6445 52.4859C53.6445 55.3984 51.2834 57.7595 48.3708 57.7595C45.4583 57.7595 43.0971 55.3984 43.0971 52.4859C43.0971 51.4104 43.4191 50.4101 43.9718 49.5761C45.5507 49.2193 46.9472 48.3816 47.9994 47.225C48.1221 47.2165 48.246 47.2122 48.3708 47.2122Z" fill="currentColor"></path>
                                 <path d="M59.7461 42C59.7461 39.0938 57.3901 36.7378 54.4838 36.7378C54.3567 36.7378 54.2306 36.7423 54.1057 36.7512C53.0573 37.8988 51.6691 38.7307 50.1003 39.0877C49.9504 39.3129 49.8173 39.5503 49.703 39.7982C49.909 40.4962 50.0195 41.2352 50.0195 42C50.0195 42.7648 49.909 43.5038 49.703 44.2019C49.8173 44.4497 49.9504 44.6872 50.1003 44.9124C51.6691 45.2694 53.0573 46.1013 54.1057 47.2489C54.2306 47.2578 54.3567 47.2623 54.4838 47.2623C57.3901 47.2623 59.7461 44.9063 59.7461 42Z" fill="currentColor"></path>
                                 <path d="M40.6028 52.4859C40.6028 51.718 40.7143 50.9761 40.9219 50.2755C40.809 50.0315 40.678 49.7976 40.5306 49.5755C38.9544 49.2187 37.56 48.3825 36.5088 47.2283C36.3856 47.2197 36.2612 47.2153 36.1358 47.2153C36.0102 47.2153 35.8855 47.2197 35.7621 47.2284C34.7111 48.3823 33.317 49.2184 31.7411 49.5753C31.1877 50.4093 30.8653 51.4099 30.8653 52.4859C30.8653 55.3967 33.225 57.7564 36.1358 57.7564C38.2573 57.7564 40.0861 56.503 40.9219 54.6962C40.7143 53.9957 40.6028 53.2538 40.6028 52.4859Z" fill="currentColor"></path>
                                 <path d="M40.5094 34.4263C40.6608 34.1992 40.795 33.9595 40.9102 33.7094C40.705 33.0126 40.595 32.2752 40.595 31.512C40.595 30.7489 40.705 30.0115 40.9102 29.3147C40.0777 27.5058 38.2492 26.25 36.1274 26.25C33.2213 26.25 30.8654 28.6059 30.8654 31.512C30.8654 32.5894 31.1892 33.5912 31.7448 34.4253C33.3117 34.7828 34.6983 35.6141 35.7457 36.7605C35.8718 36.7695 35.9991 36.7741 36.1274 36.7741C36.2572 36.7741 36.3858 36.7694 36.5132 36.7602C37.5596 35.615 38.9445 34.7843 40.5094 34.4263Z" fill="currentColor"></path>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M42 84C65.196 84 84 65.196 84 42C84 18.804 65.196 0 42 0C18.804 0 0 18.804 0 42C0 65.196 18.804 84 42 84ZM42 74.518C24.0408 74.518 9.48201 59.9592 9.48201 42C9.48201 24.0408 24.0408 9.48201 42 9.48201C59.9592 9.48201 74.518 24.0408 74.518 42C74.518 59.9592 59.9592 74.518 42 74.518Z" fill="currentColor"></path>
-                            </svg>
+                            </svg> -->
                         </a>
                         <div class="flex lg:hidden">
-                            <button aria-label="humburger" id="menu" class="relative border bordeer-gray-950/30 dark:border-white/20 size-9 rounded-full transition duration-300 active:scale-95">
-                                <div aria-hidden="true" id="line1" class="m-auto h-[1.5px] w-4 rounded bg-gray-900 transition duration-300 dark:bg-gray-300"></div>
-                                <div aria-hidden="true" id="line2" class="m-auto mt-1.5 h-[1.5px] w-4 rounded bg-gray-900 transition duration-300 dark:bg-gray-300"></div>
+                            <button aria-label="humburger" id="menu"
+                                class="relative border bordeer-gray-950/30 dark:border-white/20 size-9 rounded-full transition duration-300 active:scale-95">
+                                <div aria-hidden="true" id="line1"
+                                    class="m-auto h-[1.5px] w-4 rounded bg-gray-900 transition duration-300 dark:bg-gray-300">
+                                </div>
+                                <div aria-hidden="true" id="line2"
+                                    class="m-auto mt-1.5 h-[1.5px] w-4 rounded bg-gray-900 transition duration-300 dark:bg-gray-300">
+                                </div>
                             </button>
                         </div>
                     </div>
-                    <div class="w-full h-0 lg:w-fit flex-wrap justify-end items-center space-y-8 lg:space-y-0 lg:flex lg:h-fit md:flex-nowrap">
+                    <div
+                        class="w-full h-0 lg:w-fit flex-wrap justify-end items-center space-y-8 lg:space-y-0 lg:flex lg:h-fit md:flex-nowrap">
                         <div class="mt-6 text-gray-600 dark:text-gray-300 md:-ml-4 lg:pr-4 lg:mt-0">
                             <ul class="space-y-6 tracking-wide text-base lg:text-sm lg:flex lg:space-y-0">
+                                <!-- 
                                 <li>
                                     <a href="#" class="block md:px-4 transition hover:text-primary-600 dark:hover:text-primary-400">
                                         <span>Product</span>
@@ -68,17 +80,21 @@
                                     <a href="#" class="block md:px-4 transition hover:text-primary-600 dark:hover:text-primary-400">
                                         <span>Blog</span>
                                     </a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
 
-                        <div class="w-full space-y-2 gap-2 pt-6 pb-4 lg:pb-0 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] items-center flex flex-col lg:flex-row lg:space-y-0 lg:w-fit lg:border-l lg:border-t-0 lg:pt-0 lg:pl-2">
-                            <button class="w-full h-9 lg:w-fit group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 *:disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border dark:disabled:border-gray-800 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-800 hover:bg-gray-100 active:bg-gray-200/75 dark:text-gray-300 dark:hover:bg-gray-500/10 dark:active:bg-gray-500/15 lg:text-sm lg:h-8 px-3.5 justify-center">
+                        <div
+                            class="w-full space-y-2 gap-2 pt-6 pb-4 lg:pb-0 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] items-center flex flex-col lg:flex-row lg:space-y-0 lg:w-fit lg:border-l lg:border-t-0 lg:pt-0 lg:pl-2">
+                            <a href="https://console.sugarai.dev/api/auth/signin"
+                                class="w-full h-9 lg:w-fit group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 *:disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border dark:disabled:border-gray-800 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-800 hover:bg-gray-100 active:bg-gray-200/75 dark:text-gray-300 dark:hover:bg-gray-500/10 dark:active:bg-gray-500/15 lg:text-sm lg:h-8 px-3.5 justify-center">
                                 <span>Login</span>
-                            </button>
-                            <button class="w-full h-9 lg:w-fit group flex items-center relative border rounded-[--btn-border-radius] *:select-none [&>*:not(.sr-only)]:relative before:rounded-[calc(var(--btn-border-radius)-1px)] before:absolute before:inset-0 before:border before:bg-gradient-to-b *:disabled:opacity-20 disabled:text-gray-950/40 disabled:border-gray-200 disabled:bg-gray-100 disabled:*:text-gray-300 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:before:border-0 dark:before:border-t dark:before:shadow-inner dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 disabled:dark:*:text-gray-700 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none dark:*:disabled:!text-white text-white border-gray-950 bg-gray-600 before:border-gray-600 before:from-gray-800 hover:bg-gray-900 active:bg-gray-950 dark:text-gray-950 dark:before:border-gray-200 dark:before:from-gray-200 dark:bg-white dark:before:shadow-white/10 dark:hover:bg-gray-100 dark:active:bg-gray-300 dark:active:before:from-gray-200 lg:text-sm lg:h-8 px-3 justify-center">
+                            </a>
+
+                            <a href="https://console.sugarai.dev/api/auth/signin"
+                                class="w-full h-9 lg:w-fit group flex items-center relative border rounded-[--btn-border-radius] *:select-none [&>*:not(.sr-only)]:relative before:rounded-[calc(var(--btn-border-radius)-1px)] before:absolute before:inset-0 before:border before:bg-gradient-to-b *:disabled:opacity-20 disabled:text-gray-950/40 disabled:border-gray-200 disabled:bg-gray-100 disabled:*:text-gray-300 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:before:border-0 dark:before:border-t dark:before:shadow-inner dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 disabled:dark:*:text-gray-700 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none dark:*:disabled:!text-white text-white border-gray-950 bg-gray-600 before:border-gray-600 before:from-gray-800 hover:bg-gray-900 active:bg-gray-950 dark:text-gray-950 dark:before:border-gray-200 dark:before:from-gray-200 dark:bg-white dark:before:shadow-white/10 dark:hover:bg-gray-100 dark:active:bg-gray-300 dark:active:before:from-gray-200 lg:text-sm lg:h-8 px-3 justify-center">
                                 <span>Sign Up</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -90,54 +106,76 @@
             <div class="relative pt-24 lg:pt-28">
                 <div class="mx-auto px-6 max-w-7xl md:px-12">
                     <div class="text-center sm:mx-auto sm:w-10/12 lg:mr-auto lg:mt-0 lg:w-4/5">
-                        <a href="https://beta.tailus.io/demo" class="border w-fit mx-auto flex justify-between items-center transition duration-200 rounded-[--annonce-border-radius] border-[--ui-light-border-color] hover:border-[--ui-light-border-hover-color] dark:border-[--ui-dark-border-color] dark:hover:border-[--ui-dark-border-hover-color] p-1 group gap-2">
-                            <span class="block text-sm px-2 py-0.5 rounded-[calc(var(--annonce-border-radius)-0.375rem)] text-white bg-primary-600">New</span>
+                        <a href="https://app.sugarai.dev/voice_forms/24056fe7-7575-42c9-8297-252009f792c5"
+                            class="border w-fit mx-auto flex justify-between items-center transition duration-200 rounded-[--annonce-border-radius] border-[--ui-light-border-color] hover:border-[--ui-light-border-hover-color] dark:border-[--ui-dark-border-color] dark:hover:border-[--ui-dark-border-hover-color] p-1 group gap-2">
+                            <span
+                                class="block text-sm px-2 py-0.5 rounded-[calc(var(--annonce-border-radius)-0.375rem)] text-white bg-primary-600">New</span>
+
                             <span class="text-sm font-medium text-gray-700 dark:text-gray-300 flex gap-6">
-                                Introducing Tailus UI React !
-                                <div class="flex items-center -space-x-3 group-hover:-translate-x-1 transition-transform duration-300">
-                                    <span class="w-2.5 translate-y-[-0.3px] -translate-x-px opacity-0 h-[1.5px] rounded bg-gray-950 dark:bg-white origin-left scale-x-0 transition duration-300 group-hover:opacity-100 group-hover:scale-x-100"></span>
-                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="size-4 text-gray-950 dark:text-white -translate-x-2 transition duration-300 group-hover:translate-x-px" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                Experience Feedback over Voice
+                                <div
+                                    class="flex items-center -space-x-3 group-hover:-translate-x-1 transition-transform duration-300">
+                                    <span
+                                        class="w-2.5 translate-y-[-0.3px] -translate-x-px opacity-0 h-[1.5px] rounded bg-gray-950 dark:bg-white origin-left scale-x-0 transition duration-300 group-hover:opacity-100 group-hover:scale-x-100"></span>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        class="size-4 text-gray-950 dark:text-white -translate-x-2 transition duration-300 group-hover:translate-x-px"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
                                     </svg>
                                 </div>
                             </span>
                         </a>
-                        <h1 class="mt-8 text-wrap text-4xl md:text-5xl font-semibold text-gray-950 dark:text-white xl:text-5xl xl:[line-height:1.125]">Tame the Wild West <br class="hidden sm:block"> of Frontend Development</h1>
-                        <p class="text-wrap mx-auto mt-8 max-w-2xl text-lg text-gray-700 dark:text-gray-300 hidden sm:block">Tailwindcss highly customizable components for building modern websites and applications that look and feel the way you mean it.</p>
-                        <p class="text-wrap mx-auto mt-6 max-w-2xl text-gray-700 dark:text-gray-300 sm:hidden">Highly customizable components for building modern websites and applications, with your personal spark.</p>
+                        <h1
+                            class="mt-8 text-wrap text-4xl md:text-5xl font-semibold text-gray-950 dark:text-white xl:text-5xl xl:[line-height:1.125]">
+                            Eliminate Customer Calls <br class="hidden sm:block"> </h1>
+                        <p
+                            class="text-wrap mx-auto mt-8 max-w-2xl text-lg text-gray-700 dark:text-gray-300 hidden sm:block">
+                            Simplify customer conversations with voice forms. <br class="hidden sm:block"> Engage,
+                            qualify leads, and get feedback for just ₹2 / $0.02 per conversation.</p>
+                        <p class="text-wrap mx-auto mt-6 max-w-2xl text-gray-700 dark:text-gray-300 sm:hidden">Engage,
+                            qualify leads, and get feedback for just ₹2 / $0.02 per conversation.</p>
                         <div class="mt-8 flex flex-col items-center justify-center gap-4">
-                            <div class="p-1 rounded-[calc(var(--btn-border-radius)+4px)] bg-gray-950/5 border dark:border-white/10 dark:bg-white/5">
-                                <a
-                                    href="/docs/installation"
-                                    class="*:select-none dark:shadow-primary-500/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-[--btn-border-radius] border border-primary-600 bg-primary-500 px-4 text-base text-white shadow-md shadow-primary-200 before:absolute before:inset-0 before:rounded-[calc(var(--btn-border-radius)-1px)] before:border before:border-primary-500 before:bg-gradient-to-b before:from-primary-600 hover:bg-primary-600 active:bg-primary-700 disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-primary-600 dark:before:border-0 dark:before:border-t dark:before:border-primary-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-primary-700 dark:active:bg-primary-800 dark:active:before:from-primary-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative"
-                                >
-                                    <svg class="size-5 relative" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path class="opacity-20 dark:opacity-50" d="M7.40705 15L5.10627 16.7375C5.0234 16.8039 4.92499 16.848 4.82033 16.8658C4.71567 16.8836 4.6082 16.8744 4.50806 16.8392C4.40793 16.8039 4.31842 16.7437 4.24798 16.6643C4.17755 16.5849 4.12851 16.4888 4.10549 16.3852L3.13986 12.0391C3.11906 11.9458 3.11993 11.8489 3.14241 11.756C3.16489 11.6631 3.20839 11.5766 3.26955 11.5031L5.63752 8.66484C5.5469 10.4883 5.99221 12.6117 7.40705 15ZM16.7305 11.5031L14.3625 8.66484C14.4571 10.4883 14.0078 12.6117 12.593 15L14.8938 16.7375C14.9766 16.8039 15.075 16.848 15.1797 16.8658C15.2844 16.8836 15.3918 16.8744 15.492 16.8392C15.5921 16.8039 15.6816 16.7437 15.7521 16.6643C15.8225 16.5849 15.8715 16.4888 15.8946 16.3852L16.8602 12.0391C16.881 11.9458 16.8801 11.8489 16.8576 11.756C16.8351 11.6631 16.7917 11.5766 16.7305 11.5031Z" fill="currentColor"></path>
+                            <div
+                                class="p-1 rounded-[calc(var(--btn-border-radius)+4px)] bg-gray-950/5 border dark:border-white/10 dark:bg-white/5">
+                                <a href="https://console.sugarai.dev?utm_source=landing&utm_medium=landing&utm_campaign=get-started"
+                                    class="*:select-none dark:shadow-primary-500/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-[--btn-border-radius] border border-primary-600 bg-primary-500 px-4 text-base text-white shadow-md shadow-primary-200 before:absolute before:inset-0 before:rounded-[calc(var(--btn-border-radius)-1px)] before:border before:border-primary-500 before:bg-gradient-to-b before:from-primary-600 hover:bg-primary-600 active:bg-primary-700 disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-primary-600 dark:before:border-0 dark:before:border-t dark:before:border-primary-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-primary-700 dark:active:bg-primary-800 dark:active:before:from-primary-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative">
+                                    <svg class="size-5 relative" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="opacity-20 dark:opacity-50"
+                                            d="M7.40705 15L5.10627 16.7375C5.0234 16.8039 4.92499 16.848 4.82033 16.8658C4.71567 16.8836 4.6082 16.8744 4.50806 16.8392C4.40793 16.8039 4.31842 16.7437 4.24798 16.6643C4.17755 16.5849 4.12851 16.4888 4.10549 16.3852L3.13986 12.0391C3.11906 11.9458 3.11993 11.8489 3.14241 11.756C3.16489 11.6631 3.20839 11.5766 3.26955 11.5031L5.63752 8.66484C5.5469 10.4883 5.99221 12.6117 7.40705 15ZM16.7305 11.5031L14.3625 8.66484C14.4571 10.4883 14.0078 12.6117 12.593 15L14.8938 16.7375C14.9766 16.8039 15.075 16.848 15.1797 16.8658C15.2844 16.8836 15.3918 16.8744 15.492 16.8392C15.5921 16.8039 15.6816 16.7437 15.7521 16.6643C15.8225 16.5849 15.8715 16.4888 15.8946 16.3852L16.8602 12.0391C16.881 11.9458 16.8801 11.8489 16.8576 11.756C16.8351 11.6631 16.7917 11.5766 16.7305 11.5031Z"
+                                            fill="currentColor"></path>
                                         <path
                                             d="M11.875 17.5C11.875 17.6658 11.8092 17.8247 11.6919 17.9419C11.5747 18.0591 11.4158 18.125 11.25 18.125H8.75C8.58424 18.125 8.42527 18.0591 8.30806 17.9419C8.19085 17.8247 8.125 17.6658 8.125 17.5C8.125 17.3342 8.19085 17.1753 8.30806 17.0581C8.42527 16.9408 8.58424 16.875 8.75 16.875H11.25C11.4158 16.875 11.5747 16.9408 11.6919 17.0581C11.8092 17.1753 11.875 17.3342 11.875 17.5ZM10 8.75C10.1854 8.75 10.3667 8.69501 10.5208 8.592C10.675 8.48899 10.7952 8.34257 10.8661 8.17126C10.9371 7.99996 10.9557 7.81146 10.9195 7.6296C10.8833 7.44774 10.794 7.2807 10.6629 7.14959C10.5318 7.01847 10.3648 6.92919 10.1829 6.89301C10.001 6.85684 9.81254 6.8754 9.64123 6.94636C9.46993 7.01732 9.32351 7.13748 9.2205 7.29165C9.11748 7.44582 9.0625 7.62708 9.0625 7.8125C9.0625 8.06114 9.16127 8.2996 9.33709 8.47541C9.5129 8.65123 9.75136 8.75 10 8.75ZM17.4703 12.1742L16.5047 16.5203C16.4589 16.7267 16.3615 16.9181 16.2216 17.0766C16.0817 17.2351 15.9039 17.3555 15.7048 17.4266C15.5057 17.4977 15.2918 17.5172 15.0832 17.4831C14.8745 17.4491 14.6779 17.3627 14.5117 17.232L12.3836 15.625H7.61797L5.48828 17.232C5.3221 17.3627 5.12549 17.4491 4.91684 17.4831C4.70819 17.5172 4.49431 17.4977 4.29522 17.4266C4.09613 17.3555 3.91832 17.2351 3.77842 17.0766C3.63853 16.9181 3.54112 16.7267 3.49531 16.5203L2.52969 12.1742C2.48873 11.9877 2.4908 11.7943 2.53574 11.6087C2.58068 11.4231 2.66731 11.2502 2.78906 11.1031L5.02031 8.42656C5.0952 7.44292 5.32102 6.47666 5.68984 5.56172C6.69766 3.03515 8.50234 1.45 9.23437 0.885935C9.45348 0.716157 9.72281 0.624023 10 0.624023C10.2772 0.624023 10.5465 0.716157 10.7656 0.885935C11.4953 1.45 13.3023 3.03515 14.3102 5.56172C14.679 6.47666 14.9048 7.44292 14.9797 8.42656L17.2109 11.1031C17.3327 11.2502 17.4193 11.4231 17.4643 11.6087C17.5092 11.7943 17.5113 11.9877 17.4703 12.1742ZM7.76797 14.375H12.232C13.882 11.4422 14.1906 8.63437 13.1492 6.025C12.2305 3.72187 10.507 2.26562 10 1.875C9.49141 2.26562 7.76797 3.72187 6.84922 6.025C5.80937 8.63437 6.11797 11.4422 7.76797 14.375ZM6.59609 14.832C5.75495 13.3034 5.24453 11.801 5.06484 10.325L3.75 11.9031L4.71562 16.25L4.72969 16.2398L6.59609 14.832ZM16.25 11.9031L14.9352 10.325C14.757 11.7979 14.2477 13.3003 13.407 14.832L15.2703 16.2383L15.2844 16.2484L16.25 11.9031Z"
-                                            fill="currentColor"
-                                        ></path>
+                                            fill="currentColor"></path>
                                     </svg>
-                                    <span class="text-nowrap">Start Building</span></a
-                                >
+                                    <span class="text-nowrap">Get Started</span></a>
                             </div>
-                            <button class="hidden *:select-none *:disabled:opacity-20 dark:*:disabled:!text-white dark:hover:bg-gray-500/15 group h-9 items-center justify-center gap-1.5 rounded-[--btn-border-radius] bg-gray-100 px-3 text-base text-gray-800 hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 dark:bg-gray-500/10 dark:text-gray-300 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 [&>*:not(.sr-only)]:relative">
+                            <button
+                                class="hidden *:select-none *:disabled:opacity-20 dark:*:disabled:!text-white dark:hover:bg-gray-500/15 group h-9 items-center justify-center gap-1.5 rounded-[--btn-border-radius] bg-gray-100 px-3 text-base text-gray-800 hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 dark:bg-gray-500/10 dark:text-gray-300 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 [&>*:not(.sr-only)]:relative">
                                 <span class="text-sm">Learn more</span>
-                                <svg class="-mr-1" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
-                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m19 12l12 12l-12 12"/></svg>
+                                <svg class="-mr-1" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                    viewBox="0 0 48 48">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="4" d="m19 12l12 12l-12 12" />
+                                </svg>
                             </button>
                         </div>
                     </div>
                     <div class="-mx-6 relative mt-8 sm:mt-12 max-w-xl sm:mx-auto">
-                        <div class="absolute inset-0 -top-8 left-1/2 -z-20 h-56 w-full -translate-x-1/2 dark:opacity-10 [background-image:linear-gradient(to_bottom,transparent_98%,theme(colors.gray.200/75%)_98%),linear-gradient(to_right,transparent_94%,_theme(colors.gray.200/75%)_94%)] [background-size:16px_35px] [mask:radial-gradient(black,transparent_95%)]"></div>
-                        <div class="absolute top-12 inset-x-0 w-2/3 h-1/3 -z-[1] rounded-full bg-primary-300 dark:bg-white/10 mx-auto blur-3xl"></div>
-                        
+                        <div
+                            class="absolute inset-0 -top-8 left-1/2 -z-20 h-56 w-full -translate-x-1/2 dark:opacity-10 [background-image:linear-gradient(to_bottom,transparent_98%,theme(colors.gray.200/75%)_98%),linear-gradient(to_right,transparent_94%,_theme(colors.gray.200/75%)_94%)] [background-size:16px_35px] [mask:radial-gradient(black,transparent_95%)]">
+                        </div>
+                        <div
+                            class="absolute top-12 inset-x-0 w-2/3 h-1/3 -z-[1] rounded-full bg-primary-300 dark:bg-white/10 mx-auto blur-3xl">
+                        </div>
+
                         <div class="swiper proofSlides pb-6">
                             <div class="swiper-wrapper">
                                 <div class="px-6 pt-2 pb-12 swiper-slide">
-                                    <div class="bg-white shadow-xl shadow-gray-950/5 p-[--card-padding] rounded-[--card-border-radius] border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg] relative border-[length:var(--border-width)] [--anchor:100] [--border-radius:calc(var(--radius)*1px)] [--border-width:calc(var(--border)*1px)] [--border:1] [--glow:60] [--hue:179] [--lightness:55%] dark:[--lightness:14%] [--opacity:1] [--radius:24] [--saturation:78%] dark:[--saturation:97%] [--speed:2]">
+                                    <div
+                                        class="bg-white shadow-xl shadow-gray-950/5 p-[--card-padding] rounded-[--card-border-radius] border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg] relative border-[length:var(--border-width)] [--anchor:100] [--border-radius:calc(var(--radius)*1px)] [--border-width:calc(var(--border)*1px)] [--border:1] [--glow:60] [--hue:179] [--lightness:55%] dark:[--lightness:14%] [--opacity:1] [--radius:24] [--saturation:78%] dark:[--saturation:97%] [--speed:2]">
                                         <div>
-                                            <svg class="h-12 w-fit mx-auto dark:hidden" xmlns="http://www.w3.org/2000/svg" width="512" height="209" viewBox="0 0 512 209" fill="none">
+                                            <!-- <svg class="h-12 w-fit mx-auto dark:hidden" xmlns="http://www.w3.org/2000/svg" width="512" height="209" viewBox="0 0 512 209" fill="none">
                                                 <g clip-path="url(#clip0_235_8)">
                                                 <path d="M117.436 207.036V154.604L118.529 153.51H129.452L130.545 154.604V207.036L129.452 208.13H118.529L117.436 207.036Z" fill="#05BDBA"/>
                                                 <path d="M117.436 53.5225V1.09339L118.529 0H129.452L130.545 1.09339V53.5225L129.452 54.6159H118.529L117.436 53.5225Z" fill="#05BDBA"/>
@@ -180,18 +218,22 @@
                                             <rect width="512" height="208.126" fill="white"/>
                                             </clipPath>
                                             </defs>
-                                            </svg>
-                                            <p class="mt-6 text-lg text-gray-950 dark:text-white text-center">30% Increase in revenue</p>
+                                            </svg> -->
+                                            <p class="mt-6 text-lg text-gray-950 dark:text-white text-center">In 30+
+                                                Languages</p>
                                         </div>
-                                        <span class="glow absolute inset-[calc(var(--border-width)*-1)] rounded-[--card-border-radius] border-[length:var(--border-width)] border-transparent ![mask-clip:padding-box,_border-box] ![mask-composite:intersect] [mask:linear-gradient(transparent,transparent),linear-gradient(white,white)]">
-                                            <span class="absolute inline-block aspect-square h-20 bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] dark:bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0.75),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] opacity-[var(--opacity)] [animation:loop_5s_infinite_linear] [offset-anchor:calc(var(--anchor)*1%)_50%] [offset-path:rect(0_100%_100%_0_round_calc(var(--glow)*1px))]"></span>
+                                        <span
+                                            class="glow absolute inset-[calc(var(--border-width)*-1)] rounded-[--card-border-radius] border-[length:var(--border-width)] border-transparent ![mask-clip:padding-box,_border-box] ![mask-composite:intersect] [mask:linear-gradient(transparent,transparent),linear-gradient(white,white)]">
+                                            <span
+                                                class="absolute inline-block aspect-square h-20 bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] dark:bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0.75),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] opacity-[var(--opacity)] [animation:loop_5s_infinite_linear] [offset-anchor:calc(var(--anchor)*1%)_50%] [offset-path:rect(0_100%_100%_0_round_calc(var(--glow)*1px))]"></span>
                                         </span>
                                     </div>
                                 </div>
                                 <div class="px-6 pt-2 pb-12 swiper-slide">
-                                    <div class="bg-white shadow-xl shadow-gray-950/5 p-[--card-padding] rounded-[--card-border-radius] border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg] relative border-[length:var(--border-width)] [--anchor:100] [--border-radius:calc(var(--radius)*1px)] [--border-width:calc(var(--border)*1px)] [--border:1] [--glow:60] [--hue:295] [--lightness:63%] [--opacity:1] [--radius:24] [--saturation:100%] [--speed:2]">
+                                    <div
+                                        class="bg-white shadow-xl shadow-gray-950/5 p-[--card-padding] rounded-[--card-border-radius] border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg] relative border-[length:var(--border-width)] [--anchor:100] [--border-radius:calc(var(--radius)*1px)] [--border-width:calc(var(--border)*1px)] [--border:1] [--glow:60] [--hue:295] [--lightness:63%] [--opacity:1] [--radius:24] [--saturation:100%] [--speed:2]">
                                         <div>
-                                            <svg class="h-12 w-fit mx-auto text-black dark:text-white" xmlns="http://www.w3.org/2000/svg" width="460" height="160" viewBox="0 0 460 160" fill="none">
+                                            <!-- <svg class="h-12 w-fit mx-auto text-black dark:text-white" xmlns="http://www.w3.org/2000/svg" width="460" height="160" viewBox="0 0 460 160" fill="none">
                                                 <path d="M65.7846 121.175C61.2669 117.045 59.9481 108.368 61.8303 102.082C65.0939 106.045 69.6158 107.301 74.2997 108.009C81.5305 109.103 88.6318 108.694 95.349 105.389C96.1174 105.011 96.8275 104.507 97.6672 103.998C98.2974 105.826 98.4615 107.672 98.2413 109.551C97.706 114.127 95.4288 117.662 91.8069 120.341C90.3586 121.413 88.8261 122.371 87.3303 123.382C82.7349 126.487 81.4917 130.129 83.2184 135.427C83.2594 135.556 83.2961 135.685 83.389 136C81.0427 134.95 79.3289 133.421 78.023 131.411C76.6438 129.289 75.9876 126.942 75.9531 124.403C75.9358 123.167 75.9358 121.92 75.7696 120.702C75.3638 117.732 73.9694 116.402 71.3426 116.325C68.6467 116.247 66.5141 117.913 65.9486 120.538C65.9054 120.739 65.8428 120.938 65.7803 121.172L65.7846 121.175Z" fill="currentColor"/>
                                                 <path d="M65.7846 121.175C61.2669 117.045 59.9481 108.368 61.8303 102.082C65.0939 106.045 69.6158 107.301 74.2997 108.009C81.5305 109.103 88.6318 108.694 95.349 105.389C96.1174 105.011 96.8275 104.507 97.6672 103.998C98.2974 105.826 98.4615 107.672 98.2413 109.551C97.706 114.127 95.4288 117.662 91.8069 120.341C90.3586 121.413 88.8261 122.371 87.3303 123.382C82.7349 126.487 81.4917 130.129 83.2184 135.427C83.2594 135.556 83.2961 135.685 83.389 136C81.0427 134.95 79.3289 133.421 78.023 131.411C76.6438 129.289 75.9876 126.942 75.9531 124.403C75.9358 123.167 75.9358 121.92 75.7696 120.702C75.3638 117.732 73.9694 116.402 71.3426 116.325C68.6467 116.247 66.5141 117.913 65.9486 120.538C65.9054 120.739 65.8428 120.938 65.7803 121.172L65.7846 121.175Z" fill="url(#paint0_linear_1_33)"/>
                                                 <path d="M40 101.034C40 101.034 53.3775 94.5177 66.7924 94.5177L76.9068 63.2155C77.2855 61.7017 78.3911 60.6729 79.6393 60.6729C80.8875 60.6729 81.9932 61.7017 82.3719 63.2155L92.4862 94.5177C108.374 94.5177 119.279 101.034 119.279 101.034C119.279 101.034 96.5558 39.133 96.5114 39.0088C95.8592 37.1787 94.7583 36 93.274 36H66.007C64.5227 36 63.4662 37.1787 62.7696 39.0088C62.7205 39.1307 40 101.034 40 101.034Z" fill="currentColor"/>
@@ -206,18 +248,22 @@
                                                         <stop offset="1" stop-color="#F041FF"/>
                                                     </linearGradient>
                                                 </defs>
-                                            </svg>
-                                            <p class="mt-6 text-lg text-gray-950 dark:text-white text-center">30% Increase in revenue</p>
+                                            </svg> -->
+                                            <p class="mt-6 text-lg text-gray-950 dark:text-white text-center">Engage,
+                                                qualify leads, and get feedback</p>
                                         </div>
-                                        <span class="glow absolute inset-[calc(var(--border-width)*-1)] rounded-[--card-border-radius] border-[length:var(--border-width)] border-transparent ![mask-clip:padding-box,_border-box] ![mask-composite:intersect] [mask:linear-gradient(transparent,transparent),linear-gradient(white,white)]">
-                                            <span class="absolute inline-block aspect-square h-20 bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] dark:bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0.75),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] opacity-[var(--opacity)] [animation:loop_5s_infinite_linear] [offset-anchor:calc(var(--anchor)*1%)_50%] [offset-path:rect(0_100%_100%_0_round_calc(var(--glow)*1px))]"></span>
+                                        <span
+                                            class="glow absolute inset-[calc(var(--border-width)*-1)] rounded-[--card-border-radius] border-[length:var(--border-width)] border-transparent ![mask-clip:padding-box,_border-box] ![mask-composite:intersect] [mask:linear-gradient(transparent,transparent),linear-gradient(white,white)]">
+                                            <span
+                                                class="absolute inline-block aspect-square h-20 bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] dark:bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0.75),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] opacity-[var(--opacity)] [animation:loop_5s_infinite_linear] [offset-anchor:calc(var(--anchor)*1%)_50%] [offset-path:rect(0_100%_100%_0_round_calc(var(--glow)*1px))]"></span>
                                         </span>
                                     </div>
                                 </div>
                                 <div class="px-6 pt-2 pb-12 swiper-slide">
-                                    <div class="bg-white shadow-xl shadow-accent-950/5 p-[--card-padding] rounded-[--card-border-radius] border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg] relative border-[length:var(--border-width)] [--anchor:100] [--border-radius:calc(var(--radius)*1px)] [--border-width:calc(var(--border)*1px)] [--border:1] [--glow:60] [--hue:240] [--lightness:67%] [--opacity:1] [--radius:24] [--saturation:84%] [--speed:2]">
+                                    <div
+                                        class="bg-white shadow-xl shadow-accent-950/5 p-[--card-padding] rounded-[--card-border-radius] border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg] relative border-[length:var(--border-width)] [--anchor:100] [--border-radius:calc(var(--radius)*1px)] [--border-width:calc(var(--border)*1px)] [--border:1] [--glow:60] [--hue:240] [--lightness:67%] [--opacity:1] [--radius:24] [--saturation:84%] [--speed:2]">
                                         <div>
-                                            <div class="h-12 w-fit mx-auto">
+                                            <!-- <div class="h-12 w-fit mx-auto">
                                                 <svg class="h-8 my-auto w-fit" xmlns:x="ns_extend;" xmlns:i="ns_ai;" xmlns:graph="ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 251.8 48" style="enable-background:new 0 0 251.8 48;" xml:space="preserve">
                                                     <g>
                                                         <path fill="currentColor" class="text-[#29363D] dark:text-white" d="M73,7.2h7l5,20.6c0.9,3.9,1.1,6.2,1.1,6.2h0.1c0,0,0.3-2.3,1.3-6.2l4.8-20.6h7.9l5.1,20.6   c1,4,1.2,6.2,1.2,6.2h0.1c0,0,0.1-2.2,1-6.2l4.8-20.6h7l-8.8,33.9h-7.7l-5.3-20.5c-1.1-4.5-1.2-6.4-1.2-6.4h-0.1c0,0-0.1,2-1.1,6.4   l-5,20.5h-8C82,41.1,73,7.2,73,7.2z M118.2,28.8c0-7.7,5-12.8,12.6-12.8c7.5,0,12.5,5,12.5,12.8c0,7.8-5,12.8-12.5,12.8   C123.2,41.6,118.2,36.6,118.2,28.8L118.2,28.8z M136.8,28.8c0-5-2.4-7.8-6-7.8c-3.9,0-6.1,3.2-6.1,7.8c0,5.1,2.4,7.9,6.1,7.9   C134.6,36.7,136.8,33.6,136.8,28.8L136.8,28.8z M146.4,16.4h6.2V21h0.1c1.1-2.4,3.6-4.7,8-4.7c0.7,0,1.2,0.1,1.5,0.2v6.2H162   c0,0-0.6-0.2-2.1-0.2c-4.8,0-7.4,2.8-7.4,8.1v10.6h-6.2V16.4z M165.1,7.2h6.2v10.9c0,6.4-0.1,7.6-0.1,7.6h0.1l9.2-9.2h7.7   l-10.8,10.7l12.5,14h-7.3l-9-10.2l-2.3,2.3v7.9H165L165.1,7.2L165.1,7.2z M189.9,24.3c0-10.4,6.5-17.4,16.2-17.4s16.2,7,16.2,17.4   s-6.5,17.4-16.2,17.4C196.4,41.7,189.9,34.7,189.9,24.3z M215.7,24.3c0-7.1-3.8-11.9-9.5-11.9c-5.7,0-9.5,4.8-9.5,11.9   s3.8,11.9,9.5,11.9C211.8,36.2,215.7,31.4,215.7,24.3z M224.7,29.8h7.1c0,4,2.7,6.2,6.9,6.2c3.5,0,5.9-1.8,5.9-4.3   c0-2.8-1.9-3.6-7.7-4.7c-5.4-1.1-11.1-2.9-11.1-9.9c0-5.9,5-10.3,12.7-10.3c8,0,12.9,4.2,12.9,10.5h-7.1c0-3.1-2.4-5-5.8-5   c-3.5,0-5.7,1.7-5.7,4.2c0,2.6,1.5,3.7,6.3,4.6c7,1.5,12.8,2.3,12.8,10.1c0,6.2-5.4,10.3-13.3,10.3   C230.4,41.5,224.7,36.9,224.7,29.8z"></path>
@@ -225,11 +271,14 @@
                                                         <path fill="#6363F1" d="M55.4,24c0-1.1-0.3-2.1-0.8-3l-9.8-17c-1.9-3.3-5.8-4.7-9.4-3.5c-1.9,0.6-3.4,2-4.4,3.7   L28.7,8L38,24l-9.8,16.9L25.9,45c-0.7,1.2-1.6,2.2-2.7,3h15.1c2.6,0,5.1-1.4,6.4-3.7l10-17.3C55.1,26.1,55.4,25.1,55.4,24z"></path>
                                                     </g>
                                                 </svg>
-                                            </div>
-                                            <p class="mt-6 text-lg text-gray-950 dark:text-white text-center">30% Increase in revenue</p>
+                                            </div> -->
+                                            <p class="mt-6 text-lg text-gray-950 dark:text-white text-center">Start at
+                                                just ₹2 / $0.02 per conversation. </p>
                                         </div>
-                                        <span class="glow absolute inset-[calc(var(--border-width)*-1)] rounded-[--card-border-radius] border-[length:var(--border-width)] border-transparent ![mask-clip:padding-box,_border-box] ![mask-composite:intersect] [mask:linear-gradient(transparent,transparent),linear-gradient(white,white)]">
-                                            <span class="absolute inline-block aspect-square h-20 bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] dark:bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0.75),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] opacity-[var(--opacity)] [animation:loop_5s_infinite_linear] [offset-anchor:calc(var(--anchor)*1%)_50%] [offset-path:rect(0_100%_100%_0_round_calc(var(--glow)*1px))]"></span>
+                                        <span
+                                            class="glow absolute inset-[calc(var(--border-width)*-1)] rounded-[--card-border-radius] border-[length:var(--border-width)] border-transparent ![mask-clip:padding-box,_border-box] ![mask-composite:intersect] [mask:linear-gradient(transparent,transparent),linear-gradient(white,white)]">
+                                            <span
+                                                class="absolute inline-block aspect-square h-20 bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] dark:bg-[radial-gradient(circle_at_right,hsl(0_0%_100%/0.75),transparent_50%),radial-gradient(circle_at_right,hsl(var(--hue)_var(--saturation)_var(--lightness,50%)/1)_50%,transparent)] opacity-[var(--opacity)] [animation:loop_5s_infinite_linear] [offset-anchor:calc(var(--anchor)*1%)_50%] [offset-path:rect(0_100%_100%_0_round_calc(var(--glow)*1px))]"></span>
                                         </span>
                                     </div>
                                 </div>
@@ -240,7 +289,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <!-- <section>
             <div class="pt-36">
                 <div class="mx-auto px-6 max-w-6xl text-gray-500">
                     <div class="relative">
@@ -389,8 +438,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section>
+        </section> -->
+        <!-- <section>
             <div class="pt-36">
                 <div class="mx-auto px-6 max-w-6xl text-gray-500">
                     <div class="text-center">
@@ -484,8 +533,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section>
+        </section> -->
+
+        <!-- <section>
             <div class="pt-36">
                 <div class="mx-auto px-6 max-w-6xl text-gray-500">
                     <div class="grid gap-12 md:gap-0 md:grid-cols-2 lg:grid-cols-5 items-center lg:gap-24">
@@ -578,16 +628,192 @@ export default () =&gt; {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
         <section>
-            <div class="pt-36">
+            <div class="pt-36 pb-20">
                 <div class="mx-auto px-6 max-w-6xl text-gray-500">
                     <div class="text-center">
-                        <h2 class="text-3xl text-gray-950 dark:text-white font-semibold">Quickstart with boilerplates</h2>
-                        <p class="mt-6 text-gray-700 dark:text-gray-300">Harum quae dolore inventore repudiandae? orrupti aut temporibus ariatur.</p>
+                        <h2 class="text-3xl text-gray-950 dark:text-white font-semibold">Usecases</h2>
+                        <p class="mt-6 text-gray-700 dark:text-gray-300">Enable Voice forms for following scenarios</p>
                     </div>
                     <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                        <div class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
+                        <!-- Appointment Booking -->
+                        <div
+                            class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
+                            <div aria-hidden="true"
+                                class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-danger-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-0 dark:group-hover:opacity-5">
+                            </div>
+                            <div class="relative">
+                                <p class="text-gray-700 dark:text-gray-300 text-lg">Appointment Booking over Voice</p>
+                                <!-- <div
+                                    class="border border-danger-500/10 flex relative size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="0.98em" height="1em"
+                                        viewBox="0 0 256 263">
+
+                                    </svg>
+                                </div> -->
+                                <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                    <p class="text-gray-700 dark:text-gray-300">Let customers book appoint over voice in
+                                        their native languages.</p>
+                                </div>
+                                <div
+                                    class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
+                                    <a href="#"
+                                        class="group rounded-[--btn-border-radius] text-gray-950 bg-gray-100 hover:bg-gray-200/75 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                        <span>Try</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- NPS Survey -->
+                        <div
+                            class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
+                            <div aria-hidden="true"
+                                class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-info-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-0 dark:group-hover:opacity-5">
+                            </div>
+                            <div class="relative">
+                                <p class="text-gray-700 dark:text-gray-300 text-lg">NPS over Voice </p>
+                                <!-- <div
+                                    class="border border-warning-500/10 flex relative size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15">
+                                    <svg class="text-[#000014] dark:text-white" xmlns="http://www.w3.org/2000/svg"
+                                        width="1em" height="1em" viewBox="0 0 128 128">
+
+                                    </svg>
+                                </div> -->
+                                <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                    <p class="text-gray-700 dark:text-gray-300">Understand what user really want to tell
+                                        you about your business</p>
+                                </div>
+                                <div
+                                    class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
+                                    <a href="#"
+                                        class="group rounded-[--btn-border-radius] text-gray-950 bg-gray-100 hover:bg-gray-200/75 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                        <span>Try</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Restaurant Feedback -->
+                        <div
+                            class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
+                            <div aria-hidden="true"
+                                class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-warning-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-0 dark:group-hover:opacity-5">
+                            </div>
+                            <div class="relative">
+                                <p class="text-gray-700 dark:text-gray-300 text-lg">Restaurant Feedback over Voice</p>
+                                <!-- <div
+                                    class="border border-warning-500/10 flex relative size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15">
+                                    <svg class="text-[#000014] dark:text-white" xmlns="http://www.w3.org/2000/svg"
+                                        width="1em" height="1em" viewBox="0 0 128 128">
+
+                                    </svg>
+                                </div> -->
+                                <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                    <p class="text-gray-700 dark:text-gray-300">Make it easier for your restraunt
+                                        customers to share their feedback and expereince</p>
+                                </div>
+                                <div
+                                    class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
+                                    <a href="#"
+                                        class="group rounded-[--btn-border-radius] text-gray-950 bg-gray-100 hover:bg-gray-200/75 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                        <span>Try</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Travel Feedback -->
+                        <div
+                            class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
+                            <div aria-hidden="true"
+                                class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-success-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-0 dark:group-hover:opacity-5">
+                            </div>
+                            <div class="relative">
+                                <p class="text-gray-700 dark:text-gray-300 text-lg">Travel Feedback over Voice</p>
+                                <!-- <div
+                                    class="border border-success-500/10 flex relative size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="0.98em" height="1em"
+                                        viewBox="0 0 256 263">
+
+                                    </svg>
+                                </div> -->
+                                <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                    <p class="text-gray-700 dark:text-gray-300">Collect insights from travelers to
+                                        enhance travel services and experiences.</p>
+                                </div>
+                                <div
+                                    class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
+                                    <a href="#"
+                                        class="group rounded-[--btn-border-radius] text-gray-950 bg-gray-100 hover:bg-gray-200/75 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                        <span>Try</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- HR Screening -->
+                        <div
+                            class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
+                            <div aria-hidden="true"
+                                class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-primary-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-0 dark:group-hover:opacity-5">
+                            </div>
+                            <div class="relative">
+                                <p class="text-gray-700 dark:text-gray-300 text-lg">HR Screening</p>
+                                <!-- <div
+                                    class="border border-primary-500/10 flex relative size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="0.98em" height="1em"
+                                        viewBox="0 0 256 263">
+                                    </svg>
+                                </div> -->
+                                <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                    <p class="text-gray-700 dark:text-gray-300">Streamline the hiring process by
+                                        collecting initial candidate responses and screening.</p>
+                                </div>
+                                <div
+                                    class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
+                                    <a href="#"
+                                        class="group rounded-[--btn-border-radius] text-gray-950 bg-gray-100 hover:bg-gray-200/75 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                        <span>Try</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Edutech  -->
+                        <div
+                            class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
+                            <div aria-hidden="true"
+                                class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-secondary-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-0 dark:group-hover:opacity-5">
+                            </div>
+                            <div class="relative">
+                                <p class="text-gray-700 dark:text-gray-300 text-lg">Requirement Gathering over Voice</p>
+                                <!-- <div
+                                    class="border border-primary-500/10 flex relative size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="0.98em" height="1em"
+                                        viewBox="0 0 256 263">
+                                    </svg>
+                                </div> -->
+                                <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
+                                    <p class="text-gray-700 dark:text-gray-300">Gather requirement from customers on
+                                        voice</p>
+                                </div>
+                                <div
+                                    class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
+                                    <a href="#"
+                                        class="group rounded-[--btn-border-radius] text-gray-950 bg-gray-100 hover:bg-gray-200/75 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                        <span>Try</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- <div class="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
                             <div aria-hidden="true" class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-warning-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-0 dark:group-hover:opacity-5"></div>
                             <div class="relative">
                                 <div class="border border-warning-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15 before:rounded-[calc((var(--card-border-radius)/2)-1px)] before:absolute before:inset-0 before:border-t before:border-white before:from-warning-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
@@ -609,17 +835,13 @@ export default () =&gt; {
                                 </div>
 
                                 <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
-                                    <p class="text-gray-700 dark:text-gray-300">Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.</p>
+                                    <p class="text-gray-700 dark:text-gray-300">Use this form to measure customer satisfaction and loyalty by asking how likely they are to recommend your product or service on a scale of 0 to 10."</p>
                                 </div>
 
                                 <div class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                                    <a href="#" download="/" class="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
-                                        <span>Download</span>
+                                    <a href="#" class="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                        <span>Try</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 13l-5 5m0 0l-5-5m5 5V6"/></svg>
-                                    </a>
-                                    <a href="https://github.com/tailus-ui" class="group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 size-8 justify-center">
-                                        <span class="sr-only">Source Code</span>
-                                        <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
                                     </a>
                                 </div>
                             </div>
@@ -734,12 +956,13 @@ export default () =&gt; {
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+
+        <!-- <section>
             <div class="py-36">
                 <div class="mx-auto px-6 max-w-6xl text-gray-500">
                     <div class="text-center">
@@ -817,7 +1040,6 @@ export default () =&gt; {
                             </div>
                         </div>
                         <div class="space-y-3">
-                            <!-- Start of Testimonial 3 -->
                             <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                                 <div class="flex gap-3">
                                     <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
@@ -835,7 +1057,6 @@ export default () =&gt; {
                                 </div>
                             </div>
 
-                            <!-- Start of Testimonial 4 -->
                             <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                                 <div class="flex gap-3">
                                     <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
@@ -853,7 +1074,7 @@ export default () =&gt; {
                                 </div>
                             </div>
 
-                            <!-- Start of Testimonial 5 -->
+
                             <div class="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
                                 <div class="flex gap-3">
                                     <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
@@ -957,8 +1178,8 @@ export default () =&gt; {
                     </div>
                 </div>
             </div>
-        </section>
-        <section>
+        </section> -->
+        <!-- <section>
             <div class="pb-36">
                 <div class="mx-auto px-6 max-w-6xl text-gray-500">
                     <div class="text-center">
@@ -1002,23 +1223,34 @@ export default () =&gt; {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <footer class="rounded-xl border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
         <div class="max-w-6xl mx-auto space-y-16 px-6 py-16 text-gray-600 2xl:px-0">
-            <div class="flex flex-wrap items-center justify-between gap-4 border-b pb-8 border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
+            <div
+                class="flex flex-wrap items-center justify-between gap-4 border-b pb-8 border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
                 <a href="/" aria-label="tailus logo">
-                    <svg class="text-gray-950 dark:text-white h-7" viewBox="0 0 298 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <img class="fill-white text-gray-950 dark:text-white h-7"
+                        src="/images/logos/sugarai-logo-transparent-2.svg" alt="sugarai logo">
+                    <!-- <svg class="text-gray-950 dark:text-white h-7" viewBox="0 0 298 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M107 30.7857H113.6V16.3429H122.686V30.7857H131.386V38.5H122.686V53.5429C122.686 55.4286 123 56.8429 123.629 57.7857C124.286 58.7286 125.214 59.2 126.414 59.2C127.414 59.2 128.2 59.0143 128.771 58.6429C129.371 58.2714 129.729 58.0143 129.843 57.8714L133.229 64.5143C133.057 64.6857 132.557 64.9714 131.729 65.3714C130.9 65.7714 129.829 66.1429 128.514 66.4857C127.2 66.8286 125.7 67 124.014 67C121.043 67 118.557 66.1143 116.557 64.3429C114.586 62.5714 113.6 59.8 113.6 56.0286V38.5H107V30.7857ZM167.156 65.9714V59.4571C166.928 60.1429 166.27 61.0857 165.185 62.2857C164.128 63.4857 162.67 64.5714 160.813 65.5429C158.985 66.5143 156.813 67 154.299 67C151.013 67 148.056 66.2143 145.428 64.6429C142.799 63.0714 140.728 60.8857 139.213 58.0857C137.699 55.2857 136.942 52.0571 136.942 48.4C136.942 44.7429 137.699 41.5143 139.213 38.7143C140.728 35.9143 142.799 33.7286 145.428 32.1571C148.056 30.5571 151.013 29.7571 154.299 29.7571C156.756 29.7571 158.885 30.1857 160.685 31.0429C162.485 31.9 163.928 32.8857 165.013 34C166.128 35.1143 166.813 36.0857 167.07 36.9143V30.7857H176.156V65.9714H167.156ZM145.985 48.4C145.985 50.6571 146.485 52.6286 147.485 54.3143C148.485 56 149.785 57.3 151.385 58.2143C153.013 59.1286 154.756 59.5857 156.613 59.5857C158.613 59.5857 160.385 59.1143 161.928 58.1714C163.499 57.2286 164.728 55.9286 165.613 54.2714C166.528 52.5857 166.985 50.6286 166.985 48.4C166.985 46.1714 166.528 44.2286 165.613 42.5714C164.728 40.8857 163.499 39.5714 161.928 38.6286C160.385 37.6571 158.613 37.1714 156.613 37.1714C154.756 37.1714 153.013 37.6429 151.385 38.5857C149.785 39.5 148.485 40.8 147.485 42.4857C146.485 44.1714 145.985 46.1429 145.985 48.4ZM186.271 65.9714V30.7857H195.4V65.9714H186.271ZM190.943 20.2429C189.4 20.2429 188.071 19.6857 186.957 18.5714C185.871 17.4571 185.329 16.1286 185.329 14.5857C185.329 13.0429 185.871 11.7143 186.957 10.6C188.071 9.45714 189.4 8.88571 190.943 8.88571C191.971 8.88571 192.914 9.15714 193.771 9.7C194.657 10.2143 195.357 10.9 195.871 11.7571C196.414 12.5857 196.686 13.5286 196.686 14.5857C196.686 16.1286 196.129 17.4571 195.014 18.5714C193.9 19.6857 192.543 20.2429 190.943 20.2429ZM215.437 65.9714H206.222V7H215.437V65.9714ZM234.044 48.0571C234.044 51.4857 234.744 54.2143 236.144 56.2429C237.572 58.2714 239.815 59.2857 242.872 59.2857C245.958 59.2857 248.201 58.2714 249.601 56.2429C251.001 54.2143 251.701 51.4857 251.701 48.0571V30.7857H260.787V49.2143C260.787 52.7571 260.087 55.8714 258.687 58.5571C257.287 61.2143 255.258 63.2857 252.601 64.7714C249.944 66.2571 246.701 67 242.872 67C239.072 67 235.844 66.2571 233.187 64.7714C230.53 63.2857 228.501 61.2143 227.101 58.5571C225.701 55.8714 225.001 52.7571 225.001 49.2143V30.7857H234.044V48.0571ZM284.016 29.7571C285.988 29.7571 287.816 29.9429 289.502 30.3143C291.188 30.6857 292.631 31.1286 293.831 31.6429C295.031 32.1571 295.859 32.5857 296.316 32.9286L292.973 38.5857C292.402 38.1 291.373 37.5429 289.888 36.9143C288.431 36.2857 286.788 35.9714 284.959 35.9714C283.131 35.9714 281.588 36.3 280.331 36.9571C279.073 37.6143 278.445 38.6 278.445 39.9143C278.445 41.2 279.102 42.2286 280.416 43C281.759 43.7714 283.573 44.4143 285.859 44.9286C287.745 45.3571 289.545 45.9571 291.259 46.7286C292.973 47.4714 294.373 48.5429 295.459 49.9429C296.573 51.3143 297.131 53.1571 297.131 55.4714C297.131 57.6714 296.659 59.5143 295.716 61C294.802 62.4571 293.573 63.6286 292.031 64.5143C290.488 65.4 288.773 66.0286 286.888 66.4C285.031 66.8 283.159 67 281.273 67C278.959 67 276.888 66.7714 275.059 66.3143C273.259 65.8571 271.759 65.3286 270.559 64.7286C269.359 64.1 268.502 63.5714 267.988 63.1429L271.331 56.8C272.073 57.5143 273.288 58.2714 274.973 59.0714C276.659 59.8429 278.545 60.2286 280.631 60.2286C282.859 60.2286 284.645 59.8 285.988 58.9429C287.331 58.0857 288.002 56.9429 288.002 55.5143C288.002 54.4571 287.673 53.6 287.016 52.9429C286.388 52.2857 285.516 51.7571 284.402 51.3571C283.288 50.9571 282.045 50.6 280.673 50.2857C279.388 49.9714 278.088 49.5714 276.773 49.0857C275.488 48.5714 274.302 47.9143 273.216 47.1143C272.131 46.2857 271.259 45.2571 270.602 44.0286C269.945 42.8 269.616 41.3571 269.616 39.7C269.616 37.5857 270.288 35.7857 271.631 34.3C272.973 32.8143 274.745 31.6857 276.945 30.9143C279.145 30.1429 281.502 29.7571 284.016 29.7571Z" fill="currentColor"></path><path d="M53.6523 31.5142C53.6523 28.5967 51.2872 26.2316 48.3697 26.2316C45.4522 26.2316 43.0871 28.5967 43.0871 31.5142C43.0871 34.4317 45.4522 36.7968 48.3697 36.7968C51.2872 36.7968 53.6523 34.4317 53.6523 31.5142Z" fill="currentColor"></path><path d="M42.6502 36.769C42.5195 36.7593 42.3875 36.7543 42.2543 36.7543C39.3572 36.7543 37.0087 39.1029 37.0087 42C37.0087 44.8971 39.3572 47.2457 42.2543 47.2457C45.1514 47.2457 47.5 44.8971 47.5 42C47.5 40.92 47.1736 39.9162 46.6141 39.0819C45.0637 38.7237 43.691 37.9013 42.6502 36.769Z" fill="currentColor"></path><path d="M34.8047 39.7898C34.5971 40.4904 34.4857 41.2322 34.4857 42C34.4857 42.7679 34.5971 43.5097 34.8047 44.2102C33.969 46.0163 32.1408 47.2693 30.02 47.2693C27.1098 47.2693 24.7507 44.9102 24.7507 42C24.7507 39.0899 27.1098 36.7308 30.02 36.7308C32.1408 36.7308 33.969 37.9837 34.8047 39.7898Z" fill="currentColor"></path><path d="M48.3708 47.2122C51.2834 47.2122 53.6445 49.5733 53.6445 52.4859C53.6445 55.3984 51.2834 57.7595 48.3708 57.7595C45.4583 57.7595 43.0971 55.3984 43.0971 52.4859C43.0971 51.4104 43.4191 50.4101 43.9718 49.5761C45.5507 49.2193 46.9472 48.3816 47.9994 47.225C48.1221 47.2165 48.246 47.2122 48.3708 47.2122Z" fill="currentColor"></path>
                         <path d="M59.7461 42C59.7461 39.0938 57.3901 36.7378 54.4838 36.7378C54.3567 36.7378 54.2306 36.7423 54.1057 36.7512C53.0573 37.8988 51.6691 38.7307 50.1003 39.0877C49.9504 39.3129 49.8173 39.5503 49.703 39.7982C49.909 40.4962 50.0195 41.2352 50.0195 42C50.0195 42.7648 49.909 43.5038 49.703 44.2019C49.8173 44.4497 49.9504 44.6872 50.1003 44.9124C51.6691 45.2694 53.0573 46.1013 54.1057 47.2489C54.2306 47.2578 54.3567 47.2623 54.4838 47.2623C57.3901 47.2623 59.7461 44.9063 59.7461 42Z" fill="currentColor"></path>
                         <path d="M40.6028 52.4859C40.6028 51.718 40.7143 50.9761 40.9219 50.2755C40.809 50.0315 40.678 49.7976 40.5306 49.5755C38.9544 49.2187 37.56 48.3825 36.5088 47.2283C36.3856 47.2197 36.2612 47.2153 36.1358 47.2153C36.0102 47.2153 35.8855 47.2197 35.7621 47.2284C34.7111 48.3823 33.317 49.2184 31.7411 49.5753C31.1877 50.4093 30.8653 51.4099 30.8653 52.4859C30.8653 55.3967 33.225 57.7564 36.1358 57.7564C38.2573 57.7564 40.0861 56.503 40.9219 54.6962C40.7143 53.9957 40.6028 53.2538 40.6028 52.4859Z" fill="currentColor"></path>
                         <path d="M40.5094 34.4263C40.6608 34.1992 40.795 33.9595 40.9102 33.7094C40.705 33.0126 40.595 32.2752 40.595 31.512C40.595 30.7489 40.705 30.0115 40.9102 29.3147C40.0777 27.5058 38.2492 26.25 36.1274 26.25C33.2213 26.25 30.8654 28.6059 30.8654 31.512C30.8654 32.5894 31.1892 33.5912 31.7448 34.4253C33.3117 34.7828 34.6983 35.6141 35.7457 36.7605C35.8718 36.7695 35.9991 36.7741 36.1274 36.7741C36.2572 36.7741 36.3858 36.7694 36.5132 36.7602C37.5596 35.615 38.9445 34.7843 40.5094 34.4263Z" fill="currentColor"></path>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M42 84C65.196 84 84 65.196 84 42C84 18.804 65.196 0 42 0C18.804 0 0 18.804 0 42C0 65.196 18.804 84 42 84ZM42 74.518C24.0408 74.518 9.48201 59.9592 9.48201 42C9.48201 24.0408 24.0408 9.48201 42 9.48201C59.9592 9.48201 74.518 24.0408 74.518 42C74.518 59.9592 59.9592 74.518 42 74.518Z" fill="currentColor"></path>
-                    </svg>
+                    </svg> -->
                 </a>
                 <div class="flex gap-3">
-                    <a href="https://github.com/tailus-ui" target="blank" aria-label="github" class="size-8 flex *:m-auto rounded-[--btn-border-radius] text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">
+                    <a href="https://www.linkedin.com/company/sugar-ai" target="blank" aria-label="linkedin"
+                        class="size-8 flex *:m-auto rounded-[--btn-border-radius] text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">
+                        <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.707 20h-2.586v-9.188h2.586v9.188zm-1.293-10.621c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5 1.5.671 1.5 1.5-.672 1.5-1.5 1.5zm12.293 10.621h-2.586v-4.966c0-1.184-.022-2.707-1.648-2.707-1.649 0-1.902 1.288-1.902 2.621v5.052h-2.586v-9.188h2.481v1.254h.035c.345-.653 1.191-1.34 2.452-1.34 2.623 0 3.106 1.726 3.106 3.969v5.305z" />
+                        </svg>
+                    </a>
+                    <!-- <a href="https://github.com/tailus-ui" target="blank" aria-label="github" class="size-8 flex *:m-auto rounded-[--btn-border-radius] text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">
                         <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
                             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                         </svg>
@@ -1031,10 +1263,10 @@ export default () =&gt; {
                     </a>
                     <a href="https://youtube.com/@tailus-ui" target="blank" aria-label="medium" class="size-8 flex *:m-auto rounded-[--btn-border-radius] text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">
                         <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"/></svg>
-                    </a>
+                    </a> -->
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-6 sm:grid-cols-4">
+            <!-- <div class="grid grid-cols-2 gap-6 sm:grid-cols-4">
                 <div>
                     <span class="font-medium text-gray-950 dark:text-white">Enterprise</span>
                     <ul class="mt-4 list-inside space-y-4">
@@ -1055,7 +1287,7 @@ export default () =&gt; {
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div>   
                     <span class="text-sm font-medium text-gray-950 dark:text-white">Product</span>
                     <ul class="mt-4 list-inside space-y-4">
                         <li>
@@ -1127,16 +1359,16 @@ export default () =&gt; {
                         <button type="submit" class="mt-3 w-full h-9 lg:w-fit group flex items-center relative border rounded-[--btn-border-radius] *:select-none [&>*:not(.sr-only)]:relative before:rounded-[calc(var(--btn-border-radius)-1px)] before:absolute before:inset-0 before:border before:bg-gradient-to-b *:disabled:opacity-20 disabled:text-gray-950/40 disabled:border-gray-200 disabled:bg-gray-100 disabled:*:text-gray-300 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:before:border-0 dark:before:border-t dark:before:shadow-inner dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 disabled:dark:*:text-gray-700 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none dark:*:disabled:!text-white text-white border-gray-950 bg-gray-600 before:border-gray-600 before:from-gray-800 hover:bg-gray-900 active:bg-gray-950 dark:text-gray-950 dark:before:border-gray-200 dark:before:from-gray-200 dark:bg-white dark:before:shadow-white/10 dark:hover:bg-gray-100 dark:active:bg-gray-300 dark:active:before:from-gray-200 lg:text-sm lg:h-8 px-3 justify-center">
                             <span>Subscribe</span>
                         </button>
-                    </form>
+                    </form> 
                 </div>
-            </div>
+            </div> -->
             <div class="flex items-center justify-between rounded-md bg-gray-100 px-6 py-3 dark:bg-gray-900">
-                <span class="text-gray-600 dark:text-gray-400">&copy; tailus 2021 - Present</span>
-                <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">Licence</a>
+                <span class="text-gray-600 dark:text-gray-400">&copy; Sugar Ai 2024 - Present</span>
+                <!-- <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">Licence</a> -->
             </div>
         </div>
     </footer>
-                    
+
     <script type="module" src="./main.js"></script>
     <script type="module">
         import Swiper from 'swiper/bundle';
@@ -1147,16 +1379,16 @@ export default () =&gt; {
 
         const swiper = new Swiper('.proofSlides', {
             effect: "cube",
-            cubeEffect : {
+            cubeEffect: {
                 slideShadows: false,
                 shadow: false,
                 shadowOffset: 20,
                 shadowScale: 0.94,
             },
             loop: true,
-            autoplay : {
+            autoplay: {
                 delay: 3000,
-                duration : 500
+                duration: 500
             },
             grabCursor: true,
             modules: [Pagination],
@@ -1166,5 +1398,6 @@ export default () =&gt; {
             }
         });
     </script>
-    </body>
+</body>
+
 </html>
