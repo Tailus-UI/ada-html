@@ -163,16 +163,18 @@
                     </div>
 
                     <div
-                        class="bg-white shadow-xl shadow-gray-950/5 p-[--card-padding] rounded-[--card-border-radius] border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg] relative border-[length:var(--border-width)] [--anchor:100] [--border-radius:calc(var(--radius)*1px)] [--border-width:calc(var(--border)*1px)] [--border:1] [--glow:60] [--hue:295] [--lightness:63%] [--opacity:1] [--radius:24] [--saturation:100%] [--speed:1]">
-                        <div>
-                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/O7z6H0Gnjr4"
-                                title="Sugar AI Demo" frameborder="0"
+                        class="bg-white shadow-xl shadow-gray-950/ m-4 mt-8 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 relative">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <iframe class="w-full h-full"
+                                src="https://www.youtube.com/embed/O7z6H0Gnjr4?si=2b9peJNUhFpATHF2&amp;controls=0"
+                                title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
                         </div>
-
                     </div>
+
+
 
 
 
@@ -260,8 +262,7 @@
                                                 </svg> -->
                                                 </div>
                                                 <p class="mt-6 text-lg text-gray-950 dark:text-white text-center">Start
-                                                    at
-                                                    just ₹2 / $0.02 per conversation. </p>
+                                                    at just ₹2 / $0.02 per conversation. </p>
                                             </div>
                                             <span
                                                 class="glow absolute inset-[calc(var(--border-width)*-1)] rounded-[--card-border-radius] border-[length:var(--border-width)] border-transparent ![mask-clip:padding-box,_border-box] ![mask-composite:intersect] [mask:linear-gradient(transparent,transparent),linear-gradient(white,white)]">
@@ -624,8 +625,17 @@ export default () =&gt; {
             <div class="pt-36 pb-20">
                 <div class="mx-auto px-6 max-w-6xl text-gray-500">
                     <div class="text-center">
-                        <h2 class="text-3xl text-gray-950 dark:text-white font-semibold">Usecases</h2>
-                        <p class="mt-6 text-gray-700 dark:text-gray-300">Enable Voice forms for following scenarios</p>
+                        <h2 class="text-3xl text-gray-950 dark:text-white font-semibold">Use Cases of Voice Forms</h2>
+                        <p class="mt-6 text-gray-700 dark:text-gray-300">Sugar AI Voice Forms help you effortlessly
+                            collect responses and feedback from your users through conversational voice and text
+                            interactions, enabling smarter product and business decisions. <br></br> Our voice forms can
+                            be created and deployed across unlimited use cases, tailored to your industry and specific
+                            needs. <br></br>
+
+                            We have highlighted some key use cases of our voice-first, in-app forms to showcase their
+                            versatility and impact.
+
+                        </p>
                     </div>
                     <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                         <!-- Appointment Booking -->
@@ -644,14 +654,15 @@ export default () =&gt; {
                                     </svg>
                                 </div> -->
                                 <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
-                                    <p class="text-gray-700 dark:text-gray-300">Let customers book appoint over voice in
+                                    <p class="text-gray-700 dark:text-gray-300">Let customers book appointments over
+                                        voice in
                                         their native languages.</p>
                                 </div>
                                 <div
                                     class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                                    <a href="#"
+                                    <a href="https://app.sugarai.dev/voice_forms/3ae3b8b0-8d63-428a-b7c0-6821974ec4dc?step=0"
                                         class="group rounded-[--btn-border-radius] text-gray-950 bg-gray-100 hover:bg-gray-200/75 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
-                                        <span>Try</span>
+                                        <span>Try Now</span>
                                     </a>
                                 </div>
                             </div>
@@ -664,7 +675,7 @@ export default () =&gt; {
                                 class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-info-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-0 dark:group-hover:opacity-5">
                             </div>
                             <div class="relative">
-                                <p class="text-gray-700 dark:text-gray-300 text-lg">NPS over Voice </p>
+                                <p class="text-gray-700 dark:text-gray-300 text-lg">NPS/Product Review over Voice </p>
                                 <!-- <div
                                     class="border border-warning-500/10 flex relative size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15">
                                     <svg class="text-[#000014] dark:text-white" xmlns="http://www.w3.org/2000/svg"
@@ -678,9 +689,9 @@ export default () =&gt; {
                                 </div>
                                 <div
                                     class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                                    <a href="#"
+                                    <a href="https://app.sugarai.dev/voice_forms/d4afbd67-516b-446e-bcb9-eea1bf508b6d?step=0"
                                         class="group rounded-[--btn-border-radius] text-gray-950 bg-gray-100 hover:bg-gray-200/75 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
-                                        <span>Try</span>
+                                        <span>Try Now</span>
                                     </a>
                                 </div>
                             </div>
@@ -702,14 +713,14 @@ export default () =&gt; {
                                     </svg>
                                 </div> -->
                                 <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
-                                    <p class="text-gray-700 dark:text-gray-300">Make it easier for your restraunt
-                                        customers to share their feedback and expereince</p>
+                                    <p class="text-gray-700 dark:text-gray-300"> Allow customers to share their feedback
+                                        and experience over voice</p>
                                 </div>
                                 <div
                                     class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                                    <a href="#"
+                                    <a href="https://app.sugarai.dev/voice_forms/3ce79343-82a5-40ad-af0a-ea0897a2db30?step=0"
                                         class="group rounded-[--btn-border-radius] text-gray-950 bg-gray-100 hover:bg-gray-200/75 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
-                                        <span>Try</span>
+                                        <span>Try Now</span>
                                     </a>
                                 </div>
                             </div>
@@ -731,14 +742,14 @@ export default () =&gt; {
                                     </svg>
                                 </div> -->
                                 <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
-                                    <p class="text-gray-700 dark:text-gray-300">Collect insights from travelers to
-                                        enhance travel services and experiences.</p>
+                                    <p class="text-gray-700 dark:text-gray-300">Collect insights from travellers to
+                                        enhance travel experiences.</p>
                                 </div>
                                 <div
                                     class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                                    <a href="#"
+                                    <a href="https://app.sugarai.dev/voice_forms/aae0cec6-b7e5-4189-b313-382a82fa35d3?step=0"
                                         class="group rounded-[--btn-border-radius] text-gray-950 bg-gray-100 hover:bg-gray-200/75 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
-                                        <span>Try</span>
+                                        <span>Try Now</span>
                                     </a>
                                 </div>
                             </div>
@@ -753,7 +764,7 @@ export default () =&gt; {
                                 class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-primary-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-0 dark:group-hover:opacity-5">
                             </div>
                             <div class="relative">
-                                <p class="text-gray-700 dark:text-gray-300 text-lg">HR Screening</p>
+                                <p class="text-gray-700 dark:text-gray-300 text-lg">HR Screening Over Voice</p>
                                 <!-- <div
                                     class="border border-primary-500/10 flex relative size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="0.98em" height="1em"
@@ -761,14 +772,14 @@ export default () =&gt; {
                                     </svg>
                                 </div> -->
                                 <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
-                                    <p class="text-gray-700 dark:text-gray-300">Streamline the hiring process by
-                                        collecting initial candidate responses and screening.</p>
+                                    <p class="text-gray-700 dark:text-gray-300">Shorlist and Screen candidates by
+                                        collecting responses over voice</p>
                                 </div>
                                 <div
                                     class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                                    <a href="#"
+                                    <a href="https://app.sugarai.dev/voice_forms/685ebcba-09e5-425c-8574-cbea9a241117"
                                         class="group rounded-[--btn-border-radius] text-gray-950 bg-gray-100 hover:bg-gray-200/75 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
-                                        <span>Try</span>
+                                        <span>Try Now</span>
                                     </a>
                                 </div>
                             </div>
@@ -782,7 +793,7 @@ export default () =&gt; {
                                 class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-secondary-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-0 dark:group-hover:opacity-5">
                             </div>
                             <div class="relative">
-                                <p class="text-gray-700 dark:text-gray-300 text-lg">Requirement Gathering over Voice</p>
+                                <p class="text-gray-700 dark:text-gray-300 text-lg">Beneficiary Feedback over Voice</p>
                                 <!-- <div
                                     class="border border-primary-500/10 flex relative size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="0.98em" height="1em"
@@ -790,14 +801,15 @@ export default () =&gt; {
                                     </svg>
                                 </div> -->
                                 <div class="mt-6 pb-6 rounded-b-[--card-border-radius]">
-                                    <p class="text-gray-700 dark:text-gray-300">Gather requirement from customers on
+                                    <p class="text-gray-700 dark:text-gray-300">Gather feedback from Non digital native
+                                        customers on
                                         voice</p>
                                 </div>
                                 <div
                                     class="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                                    <a href="#"
+                                    <a href="https://app.sugarai.dev/voice_forms/888e9b49-01d2-41ec-bb32-9f53c6a4eebe"
                                         class="group rounded-[--btn-border-radius] text-gray-950 bg-gray-100 hover:bg-gray-200/75 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
-                                        <span>Try</span>
+                                        <span>Try Now</span>
                                     </a>
                                 </div>
                             </div>
@@ -957,7 +969,7 @@ export default () =&gt; {
             <div class="xl:container m-auto px-6 py-20 md:px-12 lg:px-20">
                 <div class="m-auto text-center lg:w-7/12">
                     <h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
-                        Pricing
+                        Voice Form Pricing
                     </h2>
                 </div>
                 <div class="mt-12 grid items-center gap-6 md:grid-cols-2 lg:flex lg:space-x-8">
@@ -970,28 +982,30 @@ export default () =&gt; {
                             <div class="relative flex justify-around">
                                 <div class="flex">
                                     <span class="-ml-6 mt-2 text-3xl font-bold text-primary">$</span>
-                                    <span class="leading-0 text-8xl font-bold text-gray-800 dark:text-white">19</span>
+                                    <span class="leading-0 text-8xl font-bold text-gray-800 dark:text-white">10</span>
                                 </div>
                                 <span class="absolute right-9 bottom-2 text-xl font-bold text-primary">/ Month</span>
                             </div>
                             <ul role="list" class="m-auto w-max space-y-4 pb-6 text-gray-600 dark:text-gray-300">
                                 <li class="space-x-2">
                                     <span class="font-semibold text-primary">&check;</span>
-                                    <span>First premium advantage</span>
+                                    <span>20 Voice Forms</span>
                                 </li>
                                 <li class="space-x-2">
                                     <span class="font-semibold text-primary">&check;</span>
-                                    <span>Second premium advantage</span>
+                                    <span>2000 Conversations/month</span>
                                 </li>
                                 <li class="space-x-2">
                                     <span class="font-semibold text-primary">&check;</span>
-                                    <span>Third advantage</span>
+                                    <span>6 Months Response Storage</span>
                                 </li>
                             </ul>
                             <button
-                                class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
-                                <span class="relative text-base font-semibold text-white dark:text-dark">Start
-                                    plan</span>
+                                class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-sky-50 before:border before:border-sky-500 dark:before:border-gray-600 dark:before:bg-gray-700 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
+                                <a
+                                    href="https://console.sugarai.dev?utm_source=landing&utm_medium=landing&utm_campaign=get-started">
+                                    <span class="relative text-base font-semibold text-sky-600 dark:text-white">Get
+                                        Started</span></a>
                             </button>
                         </div>
                     </div>
@@ -1007,17 +1021,17 @@ export default () =&gt; {
                                     <div class="flex">
                                         <span class="-ml-6 mt-2 text-3xl font-bold text-primary">$</span>
                                         <span
-                                            class="leading-0 text-8xl font-bold text-gray-800 dark:text-white">15</span>
+                                            class="leading-0 text-8xl font-bold text-gray-800 dark:text-white">8</span>
                                     </div>
                                     <div class="mb-2">
                                         <span
-                                            class="block text-xl font-bold text-gray-500 dark:text-gray-400">.56</span>
-                                        <span class="block text-xl font-bold text-primary">/ Month</span>
+                                            class="block text-xl font-bold text-gray-500 dark:text-gray-400">.33</span>
+                                        <span class="block text-xl font-bold text-primary">/Month</span>
                                     </div>
                                 </div>
                                 <div class="text-center text-2xl font-medium">
-                                    <span class="text-gray-400 line-through">$234</span>
-                                    <span class="font-semibold text-gray-700 dark:text-white">$190</span>
+                                    <span class="text-gray-400 line-through">$120</span>
+                                    <span class="font-semibold text-gray-700 dark:text-white">$100</span>
                                 </div>
                                 <span class="block text-center text-xs uppercase text-primary">BILLED YEARLY</span>
                                 <span
@@ -1027,25 +1041,24 @@ export default () =&gt; {
                             <ul role="list" class="m-auto w-max space-y-4 pb-6 text-gray-600 dark:text-gray-300">
                                 <li class="space-x-2">
                                     <span class="font-semibold text-primary">&check;</span>
-                                    <span>First premium advantage</span>
+                                    <span>50 Voice Forms</span>
                                 </li>
                                 <li class="space-x-2">
                                     <span class="font-semibold text-primary">&check;</span>
-                                    <span>Second premium advantage</span>
+                                    <span>3000 Conversations/month</span>
                                 </li>
                                 <li class="space-x-2">
                                     <span class="font-semibold text-primary">&check;</span>
-                                    <span>Third advantage</span>
+                                    <span>12 Months Response Storage</span>
                                 </li>
-                                <li class="space-x-2">
-                                    <span class="font-semibold text-primary">&check;</span>
-                                    <span>Fourth organizations advantage</span>
-                                </li>
+
                             </ul>
                             <button
-                                class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
-                                <span class="relative text-base font-semibold text-white dark:text-dark">Start
-                                    plan</span>
+                                class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-sky-50 before:border before:border-sky-500 dark:before:border-gray-600 dark:before:bg-gray-700 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
+                                <a
+                                    href="https://console.sugarai.dev?utm_source=landing&utm_medium=landing&utm_campaign=get-started">
+                                    <span class="relative text-base font-semibold text-sky-600 dark:text-white">Get
+                                        Started</span></a>
                             </button>
                         </div>
                     </div>
@@ -1065,25 +1078,30 @@ export default () =&gt; {
                             <ul role="list" class="m-auto w-max space-y-4 pb-6 text-gray-600 dark:text-gray-300">
                                 <li class="space-x-2">
                                     <span class="font-semibold text-primary">&check;</span>
-                                    <span>First premium advantage</span>
+                                    <span>3 Voice Forms</span>
                                 </li>
                                 <li class="space-x-2">
                                     <span class="font-semibold text-primary">&check;</span>
-                                    <span>Second premium advantage</span>
+                                    <span>100 Conversations/month</span>
                                 </li>
                                 <li class="space-x-2">
                                     <span class="font-semibold text-primary">&check;</span>
-                                    <span>Third advantage</span>
+                                    <span>30 Days Response Storage</span>
                                 </li>
                             </ul>
                             <button
                                 class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-sky-50 before:border before:border-sky-500 dark:before:border-gray-600 dark:before:bg-gray-700 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
-                                <span class="relative text-base font-semibold text-sky-600 dark:text-white">Get
-                                    Started</span>
+                                <a
+                                    href="https://console.sugarai.dev?utm_source=landing&utm_medium=landing&utm_campaign=get-started">
+                                    <span class="relative text-base font-semibold text-sky-600 dark:text-white">Get
+                                        Started</span></a>
                             </button>
+
                         </div>
                     </div>
                 </div>
+                <p class="mt-6 text-gray-700 dark:text-gray-300"> If you have high volume requirments, Contact us for
+                    Enterprise Version. We provide both Cloud & On-Prem Versions </p>
             </div>
 
         </section>

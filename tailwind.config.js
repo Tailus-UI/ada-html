@@ -42,6 +42,7 @@ module.exports = {
         
     },
     plugins: [
+        require('@tailwindcss/aspect-ratio'),
         themer({
             palette: {
                 extend : "nature"
