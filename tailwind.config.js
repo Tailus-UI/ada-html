@@ -19,23 +19,17 @@ module.exports = {
             },
         },
         
+        extend: {
+            colors: ({ colors }) => ({
+                primary : colors.indigo,
+                danger : colors.rose,
+                warning : colors.yellow,
+                success : colors.lime,
+                info : colors.blue,
+                gray : colors.zinc,
+            }),
+        }
+        
     },
-    plugins: [
-
-        // if i delete this i got an error
-        // themer({
-        //     palette: {
-        //         extend : "nature"
-        //     },
-        //     radius: "smoothest",
-        //     background: "light",
-        //     border: "light",
-        //     padding:"large",
-        //     components: {
-        //         button: {
-        //             rounded : "2xl"
-        //         }
-        //     }
-        // })
-    ],
+    plugins: [],
 };
