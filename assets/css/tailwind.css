@@ -623,7 +623,7 @@
     }
 
     .annonce.sz-sm{
-        @apply py-1 pl-1 pr-4 [&>span]:rounded-[calc(var(--annonce-radius)-4px)]
+        @apply py-1 pl-1 pr-1 [&>span]:rounded-[calc(var(--annonce-radius)-4px)]
     }
 
     .annonce.sz-md{
