@@ -2,7 +2,7 @@
   "name": "ada-html",
   "description": "A Modern landing page built with Tailwind CSS, Tailus Themer and Vite",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.2.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
