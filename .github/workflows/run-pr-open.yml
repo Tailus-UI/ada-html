@@ -1,0 +1,50 @@
+name: Build App
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  AWS_ROLE_ARN: arn:aws:iam::443420183404:role/github
+  AWS_DEFAULT_REGION: us-east-1
+  PLAN_NAME: main
+
+concurrency:
+  group: ${{ github.job }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build project
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: configureawscredentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{env.AWS_ROLE_ARN}}
+          role-session-name: terraform
+          aws-region: ${{env.AWS_DEFAULT_REGION}}
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          cache: 'npm'
+          cache-dependency-path: ./package-lock.json
+
+      - name: Install dependencies
+        working-directory: ./
+        run: npm install --immutable
+
+      - name: Build app
+        working-directory: ./
+        run: npm run build
