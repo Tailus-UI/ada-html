@@ -1,0 +1,67 @@
+name: Run scripts to Test App
+
+on:
+  workflow_dispatch:
+    inputs:
+      seed_name:
+        type: choice
+        description: The seed name to run
+        required: true
+        options: 
+        - product-code-seed
+        - doc-type-seed
+        - teams-seed
+        - permissions-seed
+        - admin-teams-seed
+      environment:
+        type: choice
+        description: Which Environment do you want to seed to?
+        options: 
+        - dev
+        - qa
+        - prod
+        required: true
+      use-default:
+        type: boolean
+        description: Use Default values
+        default: true
+        required: true
+      dry-run:
+        type: boolean
+        description: Is this a Dry run?
+        default: true
+        required: true
+      superadmin-name:
+        description: (Optional) To specify Super Admin Name
+        required: false
+      superadmin-email:
+        description: (Optional) To specify Super Admin Email
+        required: false
+      admin-name:
+        description: (Optional) To specify Admin Name
+        required: false
+      admin-email:
+        description: (Optional) To specify Admin Email
+        required: false
+      
+
+concurrency:
+  group: ${{ github.job }}-${{ github.ref }}   
+  cancel-in-progress: false
+
+# create job to run `npm run 
+jobs:
+  run_seed_default:
+    runs-on: ubuntu-latest
+    environment: Development
+    if: ${{ (inputs.use-default) }}
+    # steps:
+      
+
+
+  run_seed_custom:
+    runs-on: ubuntu-latest
+    environment: Development
+    if: ${{ !(inputs.use-default) }}
+    # steps:
+      
